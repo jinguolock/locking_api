@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+  <Appenders>
+    <Console name="Console" target="SYSTEM_OUT">
+      <PatternLayout charset="utf-8" pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36}:%L - %msg%n"/>
+    </Console>
+    <!--  File name="ZYHQFile" fileName="logs/tms.log">
+      <PatternLayout>
+        <Pattern  charset="utf-8">%d{HH:mm:ss} [%t] %-5level %logger - %msg%n</Pattern>
+      </PatternLayout>
+    </File-->
+     
+  </Appenders>
+  <Loggers>
+  	<!--  Logger name="com.zyhq.tms" level="TRACE">
+      <AppenderRef ref="ZYHQFile"/>
+    </Logger-->
+    <Root level="info">
+      <AppenderRef ref="Console"/>
+    </Root>
+  </Loggers>
+</Configuration>
